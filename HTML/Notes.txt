@@ -53,3 +53,54 @@ Pre-defined texts used inside the body of the html document.
 ## Horizontal Rule Tag:- <hr>
 -It is a single tag used to create a horizontal line.
 -It breaks the line and move the cursor to the next line, but before moving the cursor to the next line, it creates a horizontal line throughout the page.
+
+# Semantics:-
+- Semantics are the tags used to create divisions inside the body tag.
+- There are two types of semantics available in HTML-
+1. Semantic tags
+- Semantic tags are the tags which have some particular meaning in their name.
+  eg:- header, footer, article, nav, section
+
+2. non-Semantic tags
+- The tags which don't have any particular meaning in their name are known as non-symantic tags.
+  eg:- div, span
+
+
+## Span Tag:- <span> .... </span>
+-It is used to create a text or a block of text.
+-It is an inline element.
+
+# Basic Styles in HTML:-
+1. bgcolor:- It is used to change the background color of the page.
+2. text:- It is used to change the text color of the page.
+3. align:- It is used to align the content of the page(left, center, right).
+   Note:- All the above properties are used inside the body tag.
+
+## Text Styles in HTML:-
+1. <b> It is used to create a bold text.
+2. <strong> It is used to create a strong/bold text.
+3. <i> It is used to create a italic text.
+4. <em> It is used to create a emphasized/italic text.
+5. <u> It is used to create a underline text.
+6. <ins> It is used to create a insert/underline text.
+7. <del> It is used to create a delete text.
+8. <sub> It is used to create a subscript text.
+9. <sup> It is used to create a superscript text.
+10. <mark> It is used to create a marked text.
+11. <small> It is used to create a small text.
+12. <big> It is used to create a big text.
+
+## pre tag:- <pre>...</pre>
+-It is used to display the same structure of elements the way they are created in code editor.
+
+
+# Hyperlink in HTML:-
+-Anchor tag <a> is used to create a hyperlink that navigates to another web-page or section of the same page.
+-Attributes/Properties:-
+1. href:- Stands for Hyperlink Reference. It is used to specify the destination of the hyperlink.
+2. target:- It is used to specify the target of the hyperlink(_self, _blank)
+    _self:- It is used to open the hyperlink in the same tab.
+    _blank:- It is used to open the hyperlink in a new tab.
+
+Syntax:-
+<a href="url" target="_blank">Link Text</a>
