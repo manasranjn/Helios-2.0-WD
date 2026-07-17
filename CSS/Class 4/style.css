@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+nav {
+    background-color: white;
+    box-shadow: 5px 0px 10px black;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 150px;
+}
+
+nav .logo {
+    font-size: 30px;
+    color: rgb(9, 9, 78)
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: rgb(9, 9, 78);
+    font-size: 18px;
+}
+
+nav button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(9, 9, 78);
+    color: white;
+    font-size: 18px;
+}
+
+
+
+
+
+.box {
+    height: 800px;
+    background-color: cadetblue;
+    display: grid;
+    /* grid-template-columns: 200px 300px 200px 300px; */
+    grid-template-columns: repeat(4, 1fr);
+    /* grid-template-columns: 2fr 1fr 1fr 2fr 1fr; */
+    /* grid-template-rows: repeat(5, 1fr); */
+    /* grid-template-rows: 300px 250px 400px; */
+    gap: 50px;
+}
+
+.child {
+    height: 100%;
+    width: 100%;
+    background-color: brown;
+    font-size: 30px;
+    color: white;
+}
+
+.box1 {
+    grid-column: span 2
+}
+
+.box3 {
+    grid-row: span 3;
+}
+
+.box7 {
+    grid-column: span 3;
+}
