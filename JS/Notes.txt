@@ -127,3 +127,43 @@ b) Post-Increment :- returns the current value, then increments.
 2.Decrement (--):- Decreases the value of a variable by 1.
 a) Pre-Decrement :- decrements first, then returns the value.
 b) Post-Decrement:- returns the current value, then decrements.
+
+# Conditional Statement :-
+-To implement some condition in the code.
+-There are 3 types of conditional statements are there
+## if Condition :-
+-When we have one statement which we want to execute based on a condition then we use ifcondition. If the condition is true then statement will execute.
+Syntax :- if (condition){ statement }
+
+## if-else Condition :-
+-When we have two statements but one condition then we use if-else condition.
+-If the condition is true then statement under if block will execute if the condition is false then the else block will execute. otherwise false.
+Syntax :- if (condition){ statement } else { statement }
+
+## if-elif condition :-
+-When we have multiple statement and multiple condition then we use elseif condition.
+Syntax :- if (condition){ 
+    statement 
+    } 
+    else if(condition){ 
+        statement 
+    } else if(condition){ 
+        statement 
+    } else { 
+        statement }
+
+## Switch case :-
+-Switch statement is used to execute different blocks of code based on the value of an expression. 
+-It provides a cleaner alternative to multiple if-else conditions.
+
+Syntax:- 
+switch (expression) {
+    case value1:
+        // Code to execute if expression === value1
+        break;
+    case value2:
+        // Code to execute if expression === value2
+        break;
+    default:
+        // Code to execute if no case matches
+}
