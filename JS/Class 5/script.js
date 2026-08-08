@@ -51,11 +51,3 @@ let price = [100, 300, 250, 650, 590, 520]
 
 //     console.log("Discounted Price", p - p * 0.10);
 // })
-
-//? map()
-
-//? filter()
-
-//? reduce()
-
-//? sort()
