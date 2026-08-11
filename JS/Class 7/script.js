@@ -29,4 +29,4 @@ const node3 = document.querySelector('.head')
 
 //? querySelectorAll()
 const nodes = document.querySelectorAll('.head')
-console.log(nodes);
+// console.log(nodes);
