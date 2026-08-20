@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-slate-800 flex justify-center items-center h-screen w-screen">
+    <div class="container w-1/3 bg-linear-to-t from-sky-600 to-indigo-700 p-10 rounded-lg">
+        <div class="search flex items-center justify-between mb-10">
+            <input type="text" placeholder="Enter a City Name"
+                class="bg-white border-none outline-none px-4 py-2 rounded-full w-2/3 text-lg">
+            <button class="w-10 h-10 rounded-full bg-white outline-none border-none cursor-pointer "><i
+                    class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="error">
+            <p class="text-2xl text-white text-center">Invalid City Name</p>
+        </div>
+
+        <div class="weather-data text-white text-center ">
+            <div class="text-center text-7xl " id="icon">
+                <i class="fa-solid fa-sun text-yellow-500"></i>
+            </div>
+            <h1 id="temp" class="text-7xl font-semibold my-4">25°C</h1>
+            <h3 id="city" class="text-4xl font-semibold">Bhubaneswar</h3>
+
+            <div class="mt-10 flex justify-between">
+                <div class="box">
+                    <p class="text-lg">Humidity <i class="fa-solid fa-droplet"></i></p>
+                    <h5 id="humidity" class="text-xl font-semibold">50%</h5>
+
+                </div>
+                <div class="box">
+                    <p class="text-lg">Wind Speed <i class="fa-solid fa-wind"></i></p>
+                    <h5 id="speed" class="text-xl font-semibold">20km/h</h5>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
