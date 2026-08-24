@@ -52,4 +52,12 @@ const person = {
 // console.log(person.name, person.address, person.age, person.isWorking);
 
 const { name, address, age, isWorking } = person
-console.log(name, age, address, isWorking);
+// console.log(name, age, address, isWorking);
+
+let aa = 10
+
+// function square() {
+//     return a * a
+// }
+
+// console.log(square());
