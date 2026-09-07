@@ -236,7 +236,7 @@ const foodItems = [
         "description": "Soft milk-solid dumplings soaked in warm sugar syrup.",
         "price": 90,
         "rating": 4.7,
-        "image": "https://images.unsplash.com/photo-1601303516534-1f7b9a2e1f9e",
+        "image": "https://cdn.pixabay.com/photo/2026/02/21/04/21/kumarsu6745-attractive-10135864_1280.jpg",
         "isVeg": true
     },
     {

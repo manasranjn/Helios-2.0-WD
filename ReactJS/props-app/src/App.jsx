@@ -11,7 +11,7 @@ const App = () => {
   return (
     <div>
       <Contents />
-      <AllStudents />
+      <AllStudents student={student} />
     </div>
   );
 };

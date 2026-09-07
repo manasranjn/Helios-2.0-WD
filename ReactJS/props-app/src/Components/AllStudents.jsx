@@ -1,10 +1,10 @@
 import React from "react";
 import StudentDetails from "./StudentDetails";
 
-const AllStudents = () => {
+const AllStudents = ({ student }) => {
   return (
     <div>
-      <StudentDetails />
+      <StudentDetails student={student} />
     </div>
   );
 };

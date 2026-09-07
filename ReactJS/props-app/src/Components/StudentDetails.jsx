@@ -2,10 +2,10 @@ import React from "react";
 import PersonalDetails from "./PersonalDetails";
 import AccademicDetails from "./AccademicDetails";
 
-const StudentDetails = () => {
+const StudentDetails = ({ student }) => {
   return (
     <div>
-      <PersonalDetails />
+      <PersonalDetails data={student} />
       <AccademicDetails />
     </div>
   );

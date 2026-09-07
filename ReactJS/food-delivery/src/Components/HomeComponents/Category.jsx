@@ -1,24 +1,56 @@
 import React from "react";
-import foodItems from "../../assets/data";
+import { FaArrowRight } from "react-icons/fa";
 
-const Category = () => {
+const Category = ({ categories, selectedCategory, onSelectCategory }) => {
   return (
-    <div className="px-10 lg:px-20 py-6 md:py-10">
-      <h1 className="text-3xl font-bold mb-4">Explore Categories</h1>
-
-      <div className="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-6 gap-4">
-        {foodItems.map((food) => (
-          <div className="p-4 rounded shadow-md h-44 cursor-pointer">
-            <img
-              src={food.image}
-              alt={food.name}
-              className="w-full h-30 object-cover rounded-md"
-            />
-            <h3 className="text-center">{food.category}</h3>
-          </div>
-        ))}
+    <section id="categories" className="px-6 lg:px-20 py-10">
+      <div className="flex items-end justify-between mb-6">
+        <div>
+          <p className="text-orange-500 font-semibold">Browse</p>
+          <h2 className="text-3xl font-bold">Explore Categories</h2>
+        </div>
+        <button
+          type="button"
+          onClick={() => onSelectCategory("All")}
+          className="hidden sm:flex items-center gap-2 text-orange-500 font-semibold hover:gap-3 transition-all"
+        >
+          View All <FaArrowRight />
+        </button>
       </div>
-    </div>
+
+      <div className="flex gap-4 overflow-x-auto pb-3 snap-x">
+        {categories.map((category) => {
+          const active = selectedCategory === category.name;
+
+          return (
+            <button
+              type="button"
+              key={category.name}
+              onClick={() => onSelectCategory(category.name)}
+              aria-pressed={active}
+              className={`min-w-36 sm:min-w-40 p-3 rounded-2xl border text-left snap-start transition-all ${
+                active
+                  ? "border-orange-500 bg-orange-50 shadow-md"
+                  : "border-gray-200 bg-white hover:border-orange-300 hover:shadow-md"
+              }`}
+            >
+              <img
+                src={category.image}
+                alt={category.name}
+                className="w-full h-24 object-cover rounded-xl"
+                loading="lazy"
+              />
+              <div className="mt-2">
+                <h3 className="font-semibold text-center">{category.name}</h3>
+                <p className="text-xs text-gray-500 text-center">
+                  {category.count} item{category.count !== 1 ? "s" : ""}
+                </p>
+              </div>
+            </button>
+          );
+        })}
+      </div>
+    </section>
   );
 };
 
