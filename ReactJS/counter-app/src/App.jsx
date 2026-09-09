@@ -4,8 +4,8 @@ import Calculator from "./Components/Calculator";
 
 const App = () => {
   return (
-    <div className="flex justify-center items-center h-screen">
-      {/* <Counter /> */}
+    <div className="flex flex-col gap-4 justify-center items-center h-screen">
+      <Counter />
 
       <Calculator />
     </div>
