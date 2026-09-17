@@ -24,7 +24,10 @@ const UnControlled = () => {
   };
 
   return (
-    <form className="p-5 rounded-lg bg-gray-400 w-sm flex flex-col gap-4">
+    <form className="p-5 rounded-lg bg-gray-400 flex flex-col gap-4">
+      <h1 className="text-3xl text-white tect-center">
+        UnControlled Form Handling
+      </h1>
       <input
         ref={nameRef}
         type="text"
