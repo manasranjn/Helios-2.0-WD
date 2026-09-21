@@ -23,6 +23,17 @@ const Home = () => {
     getAllPost();
   }, []);
 
+  const handleDelete = (id) => {
+    axios
+      .delete(`http://localhost:5000/posts/${id}`)
+      .then((res) => {
+        getAllPost();
+      })
+      .catch((err) => {
+        console.log(err.message);
+      });
+  };
+
   return (
     <div className="min-h-screen bg-[#F2EFE7] px-20 py-10">
       <h2 className="text-3xl font-semibold">Explore Blogs</h2>
@@ -43,11 +54,14 @@ const Home = () => {
             <div className="flex justify-between absolute bottom-4 left-4 right-4">
               <button
                 className="px-5 py-2 rounded bg-blue-500 font-semibold cursor-pointer text-white"
-                onClick={() => navigate("/blog")}
+                onClick={() => navigate(`/blog/${post.id}`)}
               >
                 Read More
               </button>
-              <button className="px-5 py-2 rounded bg-red-500 font-semibold cursor-pointer text-white">
+              <button
+                className="px-5 py-2 rounded bg-red-500 font-semibold cursor-pointer text-white"
+                onClick={() => handleDelete(post.id)}
+              >
                 Delete
               </button>
             </div>
