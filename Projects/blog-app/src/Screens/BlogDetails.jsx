@@ -14,7 +14,7 @@ const BlogDetails = () => {
     axios
       .get(`http://localhost:5000/posts/${id}`)
       .then((res) => {
-        console.log(res.data);
+        // console.log(res.data);
         setPost(res.data);
       })
       .catch((err) => {

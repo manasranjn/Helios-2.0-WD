@@ -1,14 +1,17 @@
 import React, { useContext } from "react";
-import { dataContext } from "../App";
+import { AppContext } from "../App";
 
 const AccademicDetails = () => {
-  const data = useContext(dataContext);
-  // console.log(data);
+  // console.log(AppContext);
+
+  const data = useContext(AppContext);
+
+  console.log(data);
 
   return (
     <div>
       <h1>AccademicDetails</h1>
-      <h3>{data.name}</h3>
+      <p>{data.name}</p>
     </div>
   );
 };
