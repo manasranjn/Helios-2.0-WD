@@ -15,12 +15,15 @@ const App = () => {
     return [
       { name: "All", image: foodItems[0]?.image, count: foodItems.length },
       ...foodItems.reduce((result, item) => {
+        // console.log(item);
+
         if (!seen.has(item.category)) {
           seen.add(item.category);
           result.push({
             name: item.category,
             image: item.image,
-            count: foodItems.filter((food) => food.category === item.category).length,
+            count: foodItems.filter((food) => food.category === item.category)
+              .length,
           });
         }
         return result;
@@ -33,7 +36,7 @@ const App = () => {
       selectedCategory === "All"
         ? foodItems
         : foodItems.filter((food) => food.category === selectedCategory),
-    [selectedCategory]
+    [selectedCategory],
   );
 
   const addToCart = (food) => {
@@ -56,11 +59,15 @@ const App = () => {
   const clearCart = () => setCart({});
 
   const cartItems = Object.values(cart);
+  console.log(cartItems);
+
   const cartCount = cartItems.reduce((sum, item) => sum + item.quantity, 0);
 
   const selectCategory = (category) => {
     setSelectedCategory(category);
-    requestAnimationFrame(() => document.getElementById("menu")?.scrollIntoView({ behavior: "smooth" }));
+    requestAnimationFrame(() =>
+      document.getElementById("menu")?.scrollIntoView({ behavior: "smooth" }),
+    );
   };
 
   return (

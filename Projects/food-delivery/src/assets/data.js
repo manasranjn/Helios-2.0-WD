@@ -6,7 +6,7 @@ const foodItems = [
         "description": "Classic pizza topped with tomato sauce, mozzarella cheese and fresh basil.",
         "price": 299,
         "rating": 4.5,
-        "image": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002",
+        "image": "https://cdn.pixabay.com/photo/2017/12/09/08/18/pizza-3007395_1280.jpg",
         "isVeg": true
     },
     {
@@ -16,7 +16,7 @@ const foodItems = [
         "description": "Fragrant basmati rice cooked with tender chicken and aromatic spices.",
         "price": 249,
         "rating": 4.8,
-        "image": "https://cdn.pixabay.com/photo/2024/01/18/17/20/ai-generated-8517258_1280.jpg",
+        "image": "https://cdn.pixabay.com/photo/2023/06/27/15/16/rice-8092512_1280.jpg",
         "isVeg": false
     },
     {
@@ -26,7 +26,7 @@ const foodItems = [
         "description": "Crispy vegetable patty served with lettuce, tomato and special sauce.",
         "price": 149,
         "rating": 4.2,
-        "image": "https://images.unsplash.com/photo-1520072959219-c595dc870360",
+        "image": "https://cdn.pixabay.com/photo/2022/07/15/18/12/cheese-burger-7323672_1280.jpg",
         "isVeg": true
     },
     {
@@ -36,7 +36,7 @@ const foodItems = [
         "description": "Juicy chicken patty with lettuce, cheese, tomato and creamy sauce.",
         "price": 199,
         "rating": 4.6,
-        "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd",
+        "image": "https://cdn.pixabay.com/photo/2022/08/29/17/44/burger-7419419_1280.jpg",
         "isVeg": false
     },
     {
@@ -46,7 +46,7 @@ const foodItems = [
         "description": "Crispy dosa filled with spiced potato masala and served with chutney.",
         "price": 120,
         "rating": 4.7,
-        "image": "https://images.unsplash.com/photo-1668236543090-82eba5ee5976",
+        "image": "https://cdn.pixabay.com/photo/2022/01/27/07/34/dosa-6971361_1280.jpg",
         "isVeg": true
     },
     {
@@ -56,7 +56,7 @@ const foodItems = [
         "description": "Soft paneer cubes cooked in a rich buttery tomato gravy.",
         "price": 220,
         "rating": 4.6,
-        "image": "https://images.unsplash.com/photo-1631452180519-c014fe946bc7",
+        "image": "https://cdn.pixabay.com/photo/2021/07/14/09/29/food-6465556_1280.jpg",
         "isVeg": true
     },
     {
@@ -66,7 +66,7 @@ const foodItems = [
         "description": "Tender chicken pieces cooked in a creamy tomato and butter gravy.",
         "price": 280,
         "rating": 4.8,
-        "image": "https://images.unsplash.com/photo-1603894584373-5ac82b2ae398",
+        "image": "https://cdn.pixabay.com/photo/2022/11/24/18/09/butter-chicken-7614835_1280.jpg",
         "isVeg": false
     },
     {
@@ -76,7 +76,7 @@ const foodItems = [
         "description": "Fried rice tossed with fresh vegetables, soy sauce and aromatic spices.",
         "price": 160,
         "rating": 4.3,
-        "image": "https://images.unsplash.com/photo-1603133872878-684f208fb84b",
+        "image": "https://cdn.pixabay.com/photo/2015/10/01/14/26/fried-rice-967081_1280.jpg",
         "isVeg": true
     },
     {
@@ -86,7 +86,7 @@ const foodItems = [
         "description": "Flavorful fried rice with chicken, vegetables, egg and soy sauce.",
         "price": 190,
         "rating": 4.5,
-        "image": "https://images.unsplash.com/photo-1512058564366-18510be2db19",
+        "image": "https://cdn.pixabay.com/photo/2021/12/29/23/59/pineapple-fried-rice-6902993_1280.jpg",
         "isVeg": false
     },
     {
@@ -106,7 +106,7 @@ const foodItems = [
         "description": "Steamed dumplings filled with seasoned minced chicken and vegetables.",
         "price": 140,
         "rating": 4.7,
-        "image": "https://images.unsplash.com/photo-1625220194771-7ebdea0b70b9",
+        "image": "https://cdn.pixabay.com/photo/2020/09/21/12/40/meal-5589923_1280.jpg",
         "isVeg": false
     },
     {
@@ -116,7 +116,7 @@ const foodItems = [
         "description": "Steamed dumplings filled with finely chopped vegetables and spices.",
         "price": 120,
         "rating": 4.4,
-        "image": "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb",
+        "image": "https://cdn.pixabay.com/photo/2020/03/15/23/05/momos-4935232_1280.jpg",
         "isVeg": true
     },
     {
@@ -186,7 +186,7 @@ const foodItems = [
         "description": "Creamy pasta cooked with parmesan cheese and Italian herbs.",
         "price": 220,
         "rating": 4.4,
-        "image": "https://images.unsplash.com/photo-1645112411341-6c4fd023714a",
+        "image": "https://cdn.pixabay.com/photo/2018/07/18/19/12/pasta-3547078_1280.jpg",
         "isVeg": true
     },
     {
@@ -196,7 +196,7 @@ const foodItems = [
         "description": "Pasta tossed with grilled chicken, vegetables and creamy sauce.",
         "price": 250,
         "rating": 4.6,
-        "image": "https://images.unsplash.com/photo-1555949258-eb67b1ef0ceb",
+        "image": "https://cdn.pixabay.com/photo/2022/06/02/18/22/ramen-7238665_1280.jpg",
         "isVeg": false
     },
     {
@@ -206,7 +206,7 @@ const foodItems = [
         "description": "Fresh sandwich filled with vegetables, cheese and creamy dressing.",
         "price": 110,
         "rating": 4.2,
-        "image": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af",
+        "image": "https://cdn.pixabay.com/photo/2022/02/12/21/22/toast-7009956_1280.jpg",
         "isVeg": true
     },
     {
@@ -216,7 +216,7 @@ const foodItems = [
         "description": "Grilled chicken breast with lettuce, tomato and cheese.",
         "price": 180,
         "rating": 4.5,
-        "image": "https://images.unsplash.com/photo-1553909489-cd47e0907980",
+        "image": "https://cdn.pixabay.com/photo/2023/04/02/21/38/sandwich-7895477_1280.jpg",
         "isVeg": false
     },
     {

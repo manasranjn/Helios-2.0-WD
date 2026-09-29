@@ -43,7 +43,7 @@ const Category = ({ categories, selectedCategory, onSelectCategory }) => {
               <div className="mt-2">
                 <h3 className="font-semibold text-center">{category.name}</h3>
                 <p className="text-xs text-gray-500 text-center">
-                  {category.count} item{category.count !== 1 ? "s" : ""}
+                  {category.count} {category.count !== 1 ? "items" : "item"}
                 </p>
               </div>
             </button>

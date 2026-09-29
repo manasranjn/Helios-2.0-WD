@@ -11,7 +11,9 @@ const FoodMenu = ({ items, cart, onAdd, onRemove, selectedCategory }) => {
             {selectedCategory === "All" ? "Popular Food" : selectedCategory}
           </h2>
         </div>
-        <p className="text-gray-500">{items.length} item{items.length !== 1 ? "s" : ""} available</p>
+        <p className="text-gray-500">
+          {items.length} {items.length !== 1 ? "items" : "item"} available
+        </p>
       </div>
 
       {items.length === 0 ? (
@@ -25,7 +27,10 @@ const FoodMenu = ({ items, cart, onAdd, onRemove, selectedCategory }) => {
             const quantity = cart[food.id] || 0;
 
             return (
-              <article key={food.id} className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition">
+              <article
+                key={food.id}
+                className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition"
+              >
                 <div className="relative">
                   <img
                     src={food.image}
@@ -33,7 +38,9 @@ const FoodMenu = ({ items, cart, onAdd, onRemove, selectedCategory }) => {
                     className="w-full h-52 object-cover"
                     loading="lazy"
                   />
-                  <span className={`absolute top-3 right-3 px-2 py-1 rounded-full text-xs font-semibold ${food.isVeg ? "bg-green-100 text-green-700" : "bg-red-100 text-red-700"}`}>
+                  <span
+                    className={`absolute top-3 right-3 px-2 py-1 rounded-full text-xs font-semibold ${food.isVeg ? "bg-green-100 text-green-700" : "bg-red-100 text-red-700"}`}
+                  >
                     {food.isVeg ? "VEG" : "NON-VEG"}
                   </span>
                 </div>
@@ -41,10 +48,14 @@ const FoodMenu = ({ items, cart, onAdd, onRemove, selectedCategory }) => {
                 <div className="p-4">
                   <div className="flex justify-between gap-3">
                     <h3 className="font-bold text-lg">{food.name}</h3>
-                    <span className="font-bold text-orange-500 whitespace-nowrap">₹{food.price}</span>
+                    <span className="font-bold text-orange-500 whitespace-nowrap">
+                      ₹{food.price}
+                    </span>
                   </div>
 
-                  <p className="text-sm text-gray-500 mt-2 line-clamp-2">{food.description}</p>
+                  <p className="text-sm text-gray-500 mt-2 line-clamp-2">
+                    {food.description}
+                  </p>
 
                   <div className="flex items-center justify-between mt-4">
                     <span className="flex items-center gap-1 text-sm">
@@ -62,11 +73,21 @@ const FoodMenu = ({ items, cart, onAdd, onRemove, selectedCategory }) => {
                       </button>
                     ) : (
                       <div className="flex items-center gap-3 border rounded-lg px-2 py-1">
-                        <button type="button" onClick={() => onRemove(food.id)} className="p-2 hover:text-orange-500">
+                        <button
+                          type="button"
+                          onClick={() => onRemove(food.id)}
+                          className="p-2 hover:text-orange-500"
+                        >
                           <FaMinus />
                         </button>
-                        <span className="font-semibold min-w-4 text-center">{quantity}</span>
-                        <button type="button" onClick={() => onAdd(food)} className="p-2 hover:text-orange-500">
+                        <span className="font-semibold min-w-4 text-center">
+                          {quantity.quantity}
+                        </span>
+                        <button
+                          type="button"
+                          onClick={() => onAdd(food)}
+                          className="p-2 hover:text-orange-500"
+                        >
                           <FaPlus />
                         </button>
                       </div>
