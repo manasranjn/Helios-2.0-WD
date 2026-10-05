@@ -4,7 +4,10 @@ import assets from "../../assets/assets.js";
 const Hero = () => {
   return (
     <div className="flex px-20 py-10 bg-[#49BBBD] ">
-      <div className="flex flex-col gap-5 justify-center w-1/3">
+      <div
+        className="flex flex-col gap-5 justify-center w-1/3"
+        data-aos="fade-right"
+      >
         <h3 className="text-4xl font-bold">
           {" "}
           <span className="text-orange-500">Studying</span> Online is now much
@@ -26,7 +29,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="w-2/3 flex justify-end">
+      <div className="w-2/3 flex justify-end" data-aos="fade-left">
         <img src={assets.Hero} alt="" className="w-[60%]" />
       </div>
     </div>

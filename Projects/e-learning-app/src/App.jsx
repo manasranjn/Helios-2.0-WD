@@ -1,4 +1,3 @@
-import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home";
 import Blogs from "./Pages/Blogs";
@@ -7,8 +6,15 @@ import Courses from "./Pages/Courses";
 import CourseDetails from "./Pages/CourseDetails";
 import Navbar from "./Components/Common/Navbar";
 import Footer from "./Components/Common/Footer";
+import aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const App = () => {
+  useEffect(() => {
+    aos.init({ duration: 1000 });
+  }, []);
+
   return (
     <BrowserRouter>
       <Navbar />
