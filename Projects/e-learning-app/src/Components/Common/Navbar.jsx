@@ -21,12 +21,18 @@ const Navbar = () => {
         </ul>
 
         <div className="flex gap-8">
-          <button className="px-6 py-2 rounded-full bg-white cursor-pointer">
+          <Link
+            to="/login"
+            className="px-6 py-2 rounded-full bg-white cursor-pointer"
+          >
             Login
-          </button>
-          <button className="px-6 py-2 rounded-full bg-white/30 text-white cursor-pointer">
+          </Link>
+          <Link
+            to="/login"
+            className="px-6 py-2 rounded-full bg-white/30 text-white cursor-pointer"
+          >
             SignUp
-          </button>
+          </Link>
         </div>
       </div>
     </div>

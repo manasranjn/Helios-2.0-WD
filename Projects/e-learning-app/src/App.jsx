@@ -9,6 +9,7 @@ import Footer from "./Components/Common/Footer";
 import aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import Login from "./Components/Login/Login";
 
 const App = () => {
   useEffect(() => {
@@ -25,6 +26,7 @@ const App = () => {
         <Route path="/blog/:id" element={<BlogDetails />} />
         <Route path="/courses" element={<Courses />} />
         <Route path="/course/:id" element={<CourseDetails />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
 
       <Footer />
