@@ -108,7 +108,7 @@ Synchronous Method :
 
 Asynchronous Method :
 --Asynchronous method do not block execution instead they use callbacks, promises or async-await allowing other Operations to run curently and improving for heavy I/O workload.
---These are preffered for sckelble eye-performance  application or server
+--These are preffered for scalable high-performance application or server
 --Some common sysnchronous method :-
      ---fs.unlink()
      ---fs.readFile()
