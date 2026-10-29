@@ -123,14 +123,14 @@ CLI(Command Line Interface):
 HTTP Server(Hyper Text Transfer Protocol):
 --An HTTP server is programm that listens for request from clients and sends back response(like web page or data).
 --In Node.js we can easily create an HTTP server using the builtin HTTP module.
---client or browser sends a request like URL,then server listens on a specific port no and then the server processes the request and sends back a responds like HTML, text or json
+--Client or browser sends a request like URL,then server listens on a specific port no and then the server processes the request and sends back a responds like HTML, text or json
 
-http module ---> http server --->request --->response
+http module ---> http server ---> request ---> response
          
-          = request----->http server--->response
+          = request -----> http server---> response
 
-Steps to create https server in Node.js :-
-Step 1: we have to import http module  either by using require() or import statement.
+Steps to create an https server in Node.js :-
+Step 1: we have to import http module either by using require() or import statement.
 
 const http=require('http')
 --The http module provides methods to create and manage servers.
