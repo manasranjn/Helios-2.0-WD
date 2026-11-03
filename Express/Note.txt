@@ -114,7 +114,7 @@ e.g {
 
 Use of JSON in Web Development:-
 --APIs typically send and recieve data in JSON format beacuse it is a language independent and supported by most programming languages. 
---In express res.json(data) sends a JSON response while middleware like express.json()  and else incoming json request
+--In express res.json(data) sends a JSON response while middleware like express.json() allows incoming json request.
 --Some common use cases are sending user data,configuration or the result of database query to the client.
 
 Q.1 What is the role of a middleware?
