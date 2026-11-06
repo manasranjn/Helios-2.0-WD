@@ -47,6 +47,7 @@ userRouter.use((req, res, next) => {
     console.log("User router middleware called");
     next();
 });
+
 userRouter.get("/profile", (req, res) => {
     res.json({ message: "User profile" });
 });
@@ -54,6 +55,7 @@ userRouter.get("/profile", (req, res) => {
 app.get("/", (req, res) => {
     res.json({ message: "Welcome to Home page" });
 });
+
 app.get("/about", (req, res) => {
     console.log(req.requestTime);
     res.json({ message: "Welcome to about page" });

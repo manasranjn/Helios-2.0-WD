@@ -30,7 +30,7 @@ app.get("/users", (req, res) => {
 
 //Application-Level middleware for Admin Route
 const adminAuthMiddleware = (req, res, next) => {
-    const isAdmin = false;
+    const isAdmin = true;
     if (!isAdmin) {
         return res.json({ message: "Access denied. Admins only" });
     }
